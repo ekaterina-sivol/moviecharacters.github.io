@@ -3208,46 +3208,7 @@ header {
     margin-right: 5px;
 }
 
-/* Медиа-запросы для адаптивности */
-@media (max-width: 768px) {
-    .results-grid {
-        grid-template-columns: 1fr;
-        gap: 1.8rem;
-    }
-    
-    .result-card {
-        height: 360px;
-    }
-    
-    .result-card-image {
-        height: 180px;
-    }
-    
-    .result-card-content h3 {
-        font-size: 1.4rem;
-    }
-    
-    .result-card-match {
-        font-size: 1.2rem;
-        padding: 0.5rem 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .result-card {
-        height: 340px;
-    }
-    
-    .result-card-image {
-        height: 160px;
-    }
-    
-    .result-card-content {
-        padding: 1.2rem;
-    }
-}
-
-/*  СТРАНИЦА ГЛАВНЫХ ГЕРОЕВ */
+/* СТРАНИЦА ГЛАВНЫХ ГЕРОЕВ */
 .main-heroes-theme {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     min-height: 100vh;
@@ -4912,4 +4873,156 @@ button:disabled {
     border-top-color: #1a1a1a;
     margin-bottom: 2px;
     z-index: 1000;
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ ДЛЯ РЕЗУЛЬТАТА ТЕСТА */
+@media (max-width: 768px) {
+    .result-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .result-hero {
+        max-width: 280px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    
+    .result-image {
+        height: 280px !important;
+    }
+    
+    .result-description h3 {
+        font-size: 1.8rem !important;
+        text-align: center !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .result-description p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .result-stats {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.8rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .result-stat {
+        padding: 1rem 0.8rem !important;
+        min-height: auto !important;
+    }
+    
+    .result-stat strong {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.3rem !important;
+    }
+    
+    .result-stat span {
+        font-size: 1.1rem !important;
+    }
+    
+    .result-actions {
+        flex-direction: column !important;
+        gap: 0.8rem !important;
+        width: 100% !important;
+    }
+    
+    .result-actions .btn {
+        width: 100% !important;
+        padding: 0.9rem !important;
+        font-size: 1rem !important;
+    }
+    
+    .result-container {
+        padding: 2rem 1.5rem !important;
+    }
+    
+    .result-header h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .result-header p {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .result-hero {
+        max-width: 240px !important;
+    }
+    
+    .result-image {
+        height: 240px !important;
+    }
+    
+    .result-description h3 {
+        font-size: 1.6rem !important;
+    }
+    
+    .result-description p {
+        font-size: 0.95rem !important;
+    }
+    
+    .result-stats {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.5rem !important;
+    }
+    
+    .result-stat {
+        padding: 0.8rem 0.5rem !important;
+    }
+    
+    .result-stat strong {
+        font-size: 0.8rem !important;
+    }
+    
+    .result-stat span {
+        font-size: 1rem !important;
+    }
+    
+    .result-container {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    .result-header h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .result-header p {
+        font-size: 1rem !important;
+    }
+    
+    .container {
+        padding: 0 15px !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    .result-section .container {
+        padding: 0 !important;
+    }
+    
+    .result-content {
+        padding: 0 !important;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+    
+    main {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    .result-section {
+        padding: 2rem 0 !important;
+    }
 }
